@@ -1,21 +1,213 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<h2>Viscare 2.0 Development</h2>
+
+
+
+
+	<div class="wrapper wrapper-login">
+             
+
+
+		<div class="container signup-two-forms animated fadeIn signup">
+
+        <h3 class="text-center">Sign Up</h3>
+
+ 
+            <div class="row">
+            
+                    <div class="col-sm-6 form-group">
+                        <label class="form-radio-label ml-3" id="show-signin">
+                            <input class="form-radio-input" type="radio" name="optionsRadios" value="" checked ="">
+                            <span class="form-radio-sign"> &nbsp; Home Health Agency</span>
+                        </label>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <label class="form-radio-label ml-3" id="show-signup">
+                                <input class="form-radio-input" type="radio" name="optionsRadios" value="" >
+                            <span class="form-radio-sign"> &nbsp; Health Care Facilitator</span>
+                        </label>
+                    </div>
+                    
+            </div> 
+
+
+       
+
+          <div class="container-login">
+			      <div class="login-form">
+              <form id="signuphha" action="" method="POST">
+                <div class="">
+                    
+				          <div class="form-group">
+                    <label for="agencyname" class="placeholder">Agency Name<span class="required-label">*</span></label>					
+                    <input id="agencyname" name="agencyname" type="text" class="form-control" required>                    
+                  </div>
+                
+
+                  <hr>
+                  <div class="row row-demo-grid">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="firstname" class="placeholder"><b>First Name<span class="required-label">*</span></b></label>
+                            <input id="firstname" name="firstname" type="text" class="form-control" placeholder="First Name" required />
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="lastname" class="placeholder"><b>Last Name<span class="required-label">*</span></b></label>
+                            <input id="lastname" name="lastname" type="text" class="form-control" placeholder="Last Name" required />
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="businessphone" class="placeholder"><b>Business Phone<span class="required-label">*</span></b></label>
+                      <input id="businessphone" name="businessphone" type="tel" maxlength = "10" class="form-control" placeholder="Business Phone" required />
+                  </div>
+                  <div class="form-group">
+                      <label for="mobile" class="placeholder"><b>Mobile<span class="required-label">*</span></b></label>
+                      <input id="mobile" name="mobile" type="number" maxlength = "10" class="form-control" placeholder="Mobile" required />
+                  </div>
+                  <div class="form-group">
+                      <label for="businessemail" class="placeholder"><b>Business Email<span class="required-label">*</span></b></label>
+                      <input id="businessemail" name="businessemail" type="email" class="form-control" placeholder="Business Email" required />
+                      <small>This will be your user name</small>
+                  </div>
+                  <div class="form-group">
+                      <label for="password" class="placeholder">Password <span class="required-label">*</span></label>
+                      <div>
+                          <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required />
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="confirmpassword" class="placeholder">Confirm Password <span class="required-label">*</span></label>
+                      <div>
+                          <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="Enter Password" required />
+                      </div>
+                  </div>
+
+                  <div class="form-group form-action-d-flex mb-3 card-action">
+                      <div class="custom-control custom-checkbox" style="visibility:hidden;">
+                        <input type="checkbox" class="custom-control-input" id="rememberme">
+                        <label class="custom-control-label m-0" for="rememberme">Remember Me</label>
+                      </div>
+                      <input type="submit" class="btn btn-primary col-md-5 float-right mt-3 mt-sm-0 fw-bold" value="Sign Up" />
+                  </div>
+                  <div class="login-account">
+                      <small class="msg">By signing up you accept <a href="javascript:;" class="link" >Terms & Conditions</a> and <a href="javascript:;" class="link">Privacy Statements</a></small>
+                      
+                  </div>
+
+                </div>
+                </form>
+              </div>
+            </div>        
+  
+    </div>
+
+
+
+      <div class="container-signup">			
+			  <div class="login-form"> 
+          <form id="signuphcf">
+            <div class="">                   
+				      <div class="form-group">
+					      <label for="companyname" class="placeholder"><b>Company Name<span class="required-label">*</span></b></label>
+					      <input  id="companyname" name="companyname" type="text" class="form-control" placeholder="Company Name" required>
+              </div>
+              <div class="form-group">
+                  <label for="fecilitytype" class="placeholder">Facility Type</label>
+                  <div class="select2-input">
+                    <select id="fecilitytype" name="fecilitytype" class="form-control" required>
+                      <option value="">&nbsp;</option>
+                      <option value="AK">Look up table - Skilled Nursing Facility (SNF)</option>
+                      <option value="HI">Hospital</option>
+                      <option>Rehabilitation Center</option>
+                      <option>Assisted Living Facility (ALF)</option>
+                      <option>Physician's Medical Office</option>
+                            
+                    </select>
+                  </div>
+              </div>
+              <div class="row row-demo-grid">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="firstnamehcf" class="placeholder"><b>First Name<span class="required-label">*</span></b></label>
+                        <input id="firstnamehcf" name="firstnamehcf" type="text" class="form-control" placeholder="First Name" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="lastnamehcf" class="placeholder"><b>Last Name<span class="required-label">*</span></b></label>
+                            <input id="lastnamehcf" name="lastnamehcf" type="text" class="form-control" placeholder="Last Name" required>
+                        </div>
+                  </div>
+              </div>
+              <div class="row row-demo-grid">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label for="businessphonehcf" class="placeholder"><b>Business Phone<span class="required-label">*</span></b></label>
+                            <input id="businessphonehcf" name="businessphonehcf" maxlength = "7" type="tel" class="form-control" placeholder="Business Phone" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="extensionhcf" class="placeholder"><b>Extension<span class="required-label">*</span></b></label>
+                            <input id="extensionhcf" name="extensionhcf" type="tel" maxlength = "3" class="form-control" placeholder="Ext" required>
+                        </div>
+                    </div>
+              </div>
+              <div class="form-group">
+                    <label for="mobilehcf" class="placeholder"><b>Mobile<span class="required-label">*</span></b></label>
+                    <input  id="mobilehcf" name="mobilehcf" type="number" maxlength = "10" class="form-control" placeholder="Mobile" required>
+              </div>
+				      <div class="form-group">
+					        <label for="businessemailhcf" class="placeholder"><b>Business Email<span class="required-label">*</span></b></label>
+                  <input  id="businessemailhcf" name="businessemailhcf" type="email" class="form-control" placeholder="Business Email" required>
+                  <small>This will be your user name</small>
+              </div>
+  
+
+				      <div class="form-group form-show-validation">
+                    <label for="passwordhcf" class="placeholder">Password <span class="required-label">*</span></label>
+                    <div>
+                        <input type="password" class="form-control" id="passwordhcf" name="passwordhcf" placeholder="Enter Password" required>
+                    </div>
+              </div>
+              <div class="form-group form-show-validation">
+                    <label for="confirmpasswordhcf" class="placeholder">Confirm Password <span class="required-label">*</span></label>
+                    <div>
+                        <input type="password" class="form-control" id="confirmpasswordhcf" name="confirmpasswordhcf" placeholder="Enter Password" required>
+                    </div>
+              </div>
+              <div class="form-group form-action-d-flex mb-3">
+                    <div class="custom-control custom-checkbox" style="visibility:hidden;">
+                        <input type="checkbox" class="custom-control-input" id="rememberme">
+                        <label class="custom-control-label m-0" for="rememberme">Remember Me</label>
+                    </div>
+                    <input type="submit" class="btn btn-primary col-md-5 float-right mt-3 mt-sm-0 fw-bold" value ="Sign Up" />
+              </div>
+              <div class="login-account">
+                    <small class="msg">By signing up you accept <a href="javascript:;" class="link" >Terms & Conditions</a> and <a href="javascript:;" class="link">Privacy Statements</a></small>
+                    
+              </div>
+            </div>
+        
+          </form>
+        </div>
+        
+    </div>
+
+  </div>    
+                    
+-->
+
 
 <router-outlet></router-outlet>

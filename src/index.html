@@ -1,14 +1,136 @@
-<!doctype html>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Viscare</title>
-  <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Sign Up</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <link rel="icon" href="./assets/img/icon.ico" type="image/x-icon"/>
+  <base href='/' />
+	<!-- Fonts and icons -->
+	<script src="./assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['./assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+	
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/atlantis.css">
 </head>
-<body>
-  <app-root></app-root>
+<body class="login">
+	<div class="wrapper wrapper-login">
+           
+
+    <app-root></app-root>
+
+    <!-- <app-registration></app-registration> -->
+		
+	</div>
+    <script src="./assets/js/core/jquery.3.2.1.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="./assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="./assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<!-- Bootstrap Toggle -->
+	<script src="./assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+	<script src="./assets/js/core/popper.min.js"></script>
+	<script src="./assets/js/core/bootstrap.min.js"></script>
+	<script src="./assets/js/atlantis.min.js"></script>
+	<script src="./assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
+    <script>    
+            $("#signuphha").validate({
+                validClass: "success",
+                rules: {
+                    firstname: {required: true},
+                    gender: {required: true},
+                    confirmpassword: {
+                        equalTo: "#password"
+                    }, 
+                    password: {
+                        required: true,
+                        minlength: 8
+                    },    
+                                   
+                },
+                highlight: function(element) {
+                    $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+                },
+                success: function(element) {
+                    $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+                },
+                messages: {
+                    agencyname: "Please Enter Agency Name",
+                    firstname: "Please Enter Your First Name",
+                    lastname: "Please Enter Your Last Name",
+                    businessphone: "Please Enter Business Pnone Number",                    
+                    mobile: "Please Enter Your Mobile Number",
+                    businessemail: "Please Enter Your Business Email",
+				password: {
+					required: "Please provide a new password",
+					minlength: "Password must be 8-16 characters & any of these symbols: ! @ # $ % ^ & * - _ + ",
+					
+				},
+				confirmpassword: {
+					required: "Please provide a new password",
+					minlength: "The password you entered don't match.",
+					
+				}
+				},
+            });
+            
+        </script>
+        <script>
+        $("#signuphcf").validate({
+                validClass: "success",
+                rules: {
+                    gender: {required: true},
+                    confirmpasswordhcf: {
+                        equalTo: "#passwordhcf"
+                    },
+                    birth: {
+                        date: true
+                    },
+                    uploadImg: {
+                        required: true, 
+                    },
+                    passwordhcf: {
+                        required: true,
+                        minlength: 8
+                    },
+                },
+                highlight: function(element) {
+                    $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+                },
+                success: function(element) {
+                    $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+                },
+                messages: {
+                    companyname: "Please Enter Company Name",
+                    fecilitytype: "Please Select Fecility Type",
+                    firstnamehcf: "Please Enter Your First Name",
+                    lastnamehcf: "Please Enter Your Last Name",
+                    businessphonehcf: "Please Enter Business Pnone Number",
+                    extensionhcf: "Enter Valid EXT",
+                    mobilehcf: "Please Enter Your Mobile Number",
+                    businessemailhcf: "Please Enter Your Business Email",
+				passwordhcf: {
+					required: "Please provide a new password",
+					minlength: "Password must be 8-16 characters & any of these symbols: ! @ # $ % ^ & * - _ +  ",
+					
+				},
+				confirmpasswordhcf: {
+					required: "Please provide a new password",
+					minlength: "The password you entered don't match.",
+					
+				}
+				},
+            });
+        </script>
 </body>
 </html>
